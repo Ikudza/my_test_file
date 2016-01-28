@@ -1,0 +1,15 @@
+# BEGIN implement function `solution` here 
+def solution(matrix):
+  row = len(matrix)
+  try:
+    col = len(matrix[0])
+  except:
+    return matrix
+  res = []
+  for j in range(col):
+    res_row = []
+    for i in range(row):
+      res_row.append(matrix[i][j])
+    res.append(res_row)
+  return res
+# END

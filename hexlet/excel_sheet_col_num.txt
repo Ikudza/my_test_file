@@ -1,0 +1,7 @@
+# BEGIN implement function `solution` here 
+def solution(string):
+  res = 0
+  for pos, i in enumerate(string):
+    res += (ord(i) - ord("A") +1)*(26**(len(string) - pos-1))
+  return res
+# END
